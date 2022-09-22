@@ -32,6 +32,8 @@ public class Robot extends TimedRobot {
 
     private RobotContainer m_robotContainer;
 
+    private Command m_teleopCommand;
+
     /**
      * This function is run when the robot is first started up and should be
      * used for any initialization code.
@@ -100,6 +102,11 @@ public class Robot extends TimedRobot {
         // this line or comment it out.
         if (m_autonomousCommand != null) {
             m_autonomousCommand.cancel();
+        }
+
+        m_teleopCommand = m_robotContainer.getTeleopCommand();
+        if (m_teleopCommand != null){
+            m_teleopCommand.schedule();
         }
     }
 

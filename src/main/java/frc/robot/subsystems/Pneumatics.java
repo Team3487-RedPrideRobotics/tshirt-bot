@@ -51,7 +51,7 @@ private Solenoid shotValve;
  
 
  reloadValve = new DoubleSolenoid(PneumaticsModuleType.CTREPCM, 0, 1); 
- reloadValve.set(Value.kForward);
+ reloadValve.set(Value.kOff);
 
  shotValve = new Solenoid(PneumaticsModuleType.CTREPCM, 2);
 

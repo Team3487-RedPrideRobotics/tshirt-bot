@@ -61,7 +61,7 @@ public class ShootCommand extends CommandBase {
             m_pneumatics.toggleShotValve();
             m_pneumatics.setReloadValve(Value.kReverse);
             Timer.delay(5);
-            m_pneumatics.setReloadValve(Value.kOff);
+            m_pneumatics.setReloadValve(Value.kForward);
             this.cancel();
         }
 

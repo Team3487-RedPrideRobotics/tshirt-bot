@@ -56,12 +56,9 @@ public class ShootCommand extends CommandBase {
     // Called every time the scheduler runs while the command is scheduled.
     @Override
     public void execute() {
-            m_pneumatics.setReloadValve(Value.kForward);
-            Timer.delay(.5);
             m_pneumatics.toggleShotValve();
-            Timer.delay(.5);
+            Timer.delay(0.05);
             m_pneumatics.toggleShotValve();
-            m_pneumatics.setReloadValve(Value.kReverse);
             this.cancel();
         }
 

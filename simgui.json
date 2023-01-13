@@ -1,13 +1,10 @@
 {
   "HALProvider": {
-    "PWM Outputs": {
-      "window": {
-        "visible": true
-      }
-    },
-    "RoboRIO": {
-      "window": {
-        "visible": true
+    "Other Devices": {
+      "Compressor[0]": {
+        "header": {
+          "open": true
+        }
       }
     },
     "Solenoids": {
@@ -23,11 +20,7 @@
   },
   "NTProvider": {
     "types": {
-      "/FMSInfo": "FMSInfo",
-      "/LiveWindow/Drivetrain": "Subsystem",
-      "/LiveWindow/Drivetrain/DriveMotorGroup": "DifferentialDrive",
-      "/LiveWindow/Pneumatics": "Subsystem",
-      "/LiveWindow/Ungrouped/Scheduler": "Scheduler"
+      "/FMSInfo": "FMSInfo"
     }
   }
 }
